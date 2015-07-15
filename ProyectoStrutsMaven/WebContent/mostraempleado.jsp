@@ -9,14 +9,38 @@
 </head>
 <body>
 
-<h2>Id empleado: <s:property value = "empleadoDTO.EMPLOYEE_ID" /></h2>
-<h2>Nombre: <s:property value = "empleadoDTO.FIRST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
-		y getNombre de la clase Persona-->	
-<h2>Apellido: <s:property value = "empleadoDTO.LAST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
-		y getNombre de la clase Persona-->										
-<h2>Sueldo: <s:property value = "empleadoDTO.SALARY" /> Euros</h2>	
+
+<s:form theme="xhtml">Empleado buscado. <s:property value = "empleadoDTO.EMPLOYEE_ID"/>
+
+<table border = "1" width="75%" >
+<tr>
+
+	<td>
+		<h2 align="center">Id Empleado: <s:property value = "empleadoDTO.EMPLOYEE_ID" /></h2>
+	</td>
 	
 
+	<td>
+		<h2 align="center">Nombre: <s:property value = "empleadoDTO.FIRST_NAME" /></h2>
+	</td>
+	<td>
+		<h2 align="center">Apellido: <s:property value = "empleadoDTO.LAST_NAME" /></h2>
+	</td>
+	
+	<td>
+		<h2 align="center">Sueldo: <s:property value = "empleadoDTO.SALARY" /> $</h2>
+	</td>
+	</tr>
+</table>
+	
+
+	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
+		y getNombre de la clase Persona-->	
+	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
+		y getNombre de la clase Persona-->										
+	
+	
+</s:form>
 
 </body>
 </html>

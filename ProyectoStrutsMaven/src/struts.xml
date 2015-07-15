@@ -4,7 +4,7 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-
+    
 	<constant name="struts.devMode" value="true" />
 
 	<package name="basicstruts2" extends="struts-default">
@@ -31,9 +31,26 @@
 		</action>
 		
 		<action name="buscarempleado" class="clasesaction.ActionBuscarEmpleado" method="execute">
-			<result name="success">/mostraempleado.jsp</result> <!-- envia a HelloWorld.jsp cuando el resultado es Success en el 
+			<result name="success">/mostraempleado.jsp</result> <!-- envia a mostraempleado.jsp cuando el resultado es Success en el 
+			                                               execute de la clase ActionPersona -->
+			                                               
+			<result name="input">/ErrorEmpleado.html</result> <!-- envia a mostraempleado.jsp cuando el resultado es Success en el 
+			                                               execute de la clase ActionPersona -->
+		</action>
+		
+		
+		<!-- Aqui vamos a utilizar el type converter para convertir tipos. -->
+		<action name="leerEmpleado" class="clasesaction.ActionPersona" method="execute">
+			<result name="success">/mostrarempleado.jsp</result> <!-- envia a HelloWorld.jsp cuando el resultado es Success en el 
 			                                               action de la clase HelloWorldAction -->
 		</action>
+		
+		
+		<action name="altavehiculo" class="coches.ActionCoches" method="execute">
+			<result name="success">/mostrarvehiculo.jsp</result> <!-- envia a HelloWorld.jsp cuando el resultado es Success en el 
+			                                               action de la clase HelloWorldAction -->
+		</action>
+		
 		
 		
 		

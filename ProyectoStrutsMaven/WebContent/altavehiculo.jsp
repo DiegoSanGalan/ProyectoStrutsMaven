@@ -5,16 +5,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Buscar Empleado por ID usando Struts2</title>
+<title>Dar de alta Vehículo</title>
 </head>
 <body>
 
-<p><font size = 5><b> Introducir id de empleado a buscar :</b></font></p>
+<s:form action="altavehiculo">
 
-<s:form action="buscarempleado">
-
-	<s:textfield name="id" label="Introducir ID a buscar" alt="Introduce un numero de ID" />
-    <s:submit value="Enviar" />
+	<s:textfield name="coche" label="Introducir Marca" />
+	<s:textfield name="coche" label="Introducir Matrícula" />
+    <s:submit value="Enviar" label = "Dar de alta" />
 </s:form>
 
 </body>

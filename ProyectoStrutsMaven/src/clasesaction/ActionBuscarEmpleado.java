@@ -6,7 +6,9 @@ import JDBC.conexionJDBC.ConexionBD;
 import JDBC.jdbc.clasesDAO.EmpleadoDAO;
 import JDBC.jdbc.clasesDTO.Empleados;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.conversion.annotations.TypeConversion;
 
 
 /**
@@ -16,6 +18,10 @@ import com.opensymphony.xwork2.ActionSupport;
  */
 public class ActionBuscarEmpleado extends ActionSupport{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private EmpleadoDAO empleadoDAO;
 	private Empleados empleadoDTO;
 	private String id;
@@ -44,6 +50,8 @@ public class ActionBuscarEmpleado extends ActionSupport{
 	/**
 	 * @param empleadoDTO the empleadoDTO to set
 	 */
+	
+	//@TypeConversion(converter="la clase que me cree para convertir de string a objeto")
 	public void setEmpleadoDTO(Empleados empleadoDTO) {
 		this.empleadoDTO = empleadoDTO;
 	}
@@ -64,8 +72,8 @@ public class ActionBuscarEmpleado extends ActionSupport{
 	
 	
 	
-	/* 
-	 * @see com.opensymphony.xwork2.ActionSupport#execute()
+	/** 
+	 * 
 	 * En el método execute creo la conexion e inicializo las variables
 	 * empleadoDTO y empleadoDAO.
 	 * Ejecuto el método de empleadoDAO leerEmpleado por id y lo guardo
@@ -75,6 +83,10 @@ public class ActionBuscarEmpleado extends ActionSupport{
 	@Override
 	public String execute() throws Exception {
 		
+		
+		//ActionContext.getContext().get("Application"); // Para acceder directamente a los distintos sacos lo haremos así.
+		//ActionContext.getContext().get("Context"); // Para acceder directamente a los distintos sacos lo haremos así.
+		//ActionContext.getContext().getContext(); // Para acceder directamente a los distintos sacos lo haremos así.
 		Connection conn = null;
 		conn = ConexionBD.obtenerConexion();
 		empleadoDTO = new Empleados();
@@ -85,8 +97,16 @@ public class ActionBuscarEmpleado extends ActionSupport{
 		
 		conn.close();
 		
+		if (null!=empleadoDTO)
+		{
+			return SUCCESS; // si existe el empleado buscado
+		}
+		else
+		{
+			return INPUT; // en caso de que no exista el empleado
+		}
 		
-		return SUCCESS;
+		
 	}
 	
 	
