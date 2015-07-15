@@ -9,11 +9,14 @@
 </head>
 <body>
 
-<h2><s:property value = "empleadoDTO.FIRST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
+<h2>Id empleado: <s:property value = "empleadoDTO.EMPLOYEE_ID" /></h2>
+<h2>Nombre: <s:property value = "empleadoDTO.FIRST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
 		y getNombre de la clase Persona-->	
-<h2><s:property value = "empleadoDTO.LAST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
+<h2>Apellido: <s:property value = "empleadoDTO.LAST_NAME" /></h2>	<!-- llama al getPersona del objeto persona creado en HelloWorldAction 
 		y getNombre de la clase Persona-->										
-<h2><s:property value = "empleadoDTO.EMPLOYEE_ID" /></h2>	
+<h2>Sueldo: <s:property value = "empleadoDTO.SALARY" /> Euros</h2>	
+	
+
 
 </body>
 </html>

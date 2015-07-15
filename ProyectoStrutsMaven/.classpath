@@ -11,7 +11,17 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/asm-3.3.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/asm-commons-3.3.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/asm-tree-3.3.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/commons-lang3-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/freemarker-2.3.22.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/struts2-core-2.3.24.jar"/>
+	<classpathentry kind="lib" path="C:/CURSO 703/JAVA/DiegoSG/ARCHIVOS IMPORTANTES AYUDAS/STRUTS2/struts-2.3.24-all/librerias obligatorias/xwork-core-2.3.24.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
