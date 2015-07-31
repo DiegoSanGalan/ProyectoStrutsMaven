@@ -49,6 +49,9 @@
 		<action name="altavehiculo" class="coches.ActionCoches" method="execute">
 			<result name="success">/mostrarvehiculo.jsp</result> <!-- envia a HelloWorld.jsp cuando el resultado es Success en el 
 			                                               action de la clase HelloWorldAction -->
+			                                               
+			<result name="input">/errormatricula.jsp</result>	                                               
+					                            
 		</action>
 		
 		

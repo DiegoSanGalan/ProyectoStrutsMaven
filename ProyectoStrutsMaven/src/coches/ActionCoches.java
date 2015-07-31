@@ -45,4 +45,30 @@ public class ActionCoches extends ActionSupport{
 		return SUCCESS;
 	}
 
+
+	/* (non-Javadoc)
+	 * @see com.opensymphony.xwork2.ActionSupport#validate()
+	 */
+	/**
+	 * Validate sobreescrito.
+	 * Por Aquí pasa antes de ir a execute y si se ejecuta addActionError
+	 * es como si hiciera return input; que en el struts.xml
+	 * ;
+	 */
+	@Override
+	public void validate() {
+		if (coche.getMarca().equals("Seat"))
+		{
+			addActionMessage("Tu coche es un Seat");
+		}
+		if (coche.getMarca().length()<5)
+		{
+			addActionMessage("El numero de letras de tu coche son: " + coche.getMarca().length());
+		}
+		if (coche.getMatricula().equals("666"))
+		{
+			addActionError("Satanas no tiene coche jajajaja");
+		}
+	}
+
 }
